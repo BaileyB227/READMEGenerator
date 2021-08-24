@@ -6,15 +6,55 @@ const fs = require('fs')
 const questions = [
     {
         type: 'input',
-        name: 'project_name',
-        message: "What's the title of your project?"
+        name: 'username',
+        message: 'What is your GitHub username?',
+
     },
     {
         type: 'input',
-        name: ''
+        name: 'email',
+        message: 'What is your email address?'
+    },
+    {
+        type: 'input',
+        name: 'project_name',
+        message: 'What is the title of your project?'
+    },
+    {
+        type: 'input',
+        name: 'project_desc',
+        message: 'Write a description of your project'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What kind of license should your project have?',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+    },
+    {
+        type: 'input',
+        name: 'install',
+        message: 'What command should be run to install dependicies?'
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What command should be run to run tests?'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage of this repo?'
+    },
+    {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who are the contributors?'
     }
 ];
-
+inquirer.prompt(questions).then((answers) => {
+    console.log(JSON.stringify(answers, null, '  '));
+  });
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
