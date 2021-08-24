@@ -12,25 +12,28 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(response) {
-  return `## ${response.title}
+  return `## ${response.projectTitle}
   ## Description of project
-  ${response.description}
+  ${response.projectDesc}
   ## Table of Contents
   [Install Guide](#install-guide)
   [Test](#test)
+  [Usage](#Usage)
   [Licensing](#Licensing)
   [Contributors](#Contributors)
   [Contact](#Contact)
   ## Install Guide
-  You can install the required dependencies with this command in the command line: ${response.installation}
+  You can install the required dependencies with this command in the command line: ${response.install}
   ## Test
   Run tests in the command line with this command: ${response.test}.
+  ## Usage
+  ${resposne.usage}
   ## Liscensing
-  This project is under the ${response.license}
+  ${response.license}
   ## Contributors
-  ${response.contributing}.
+  ${response.contributors}.
   ## Contact
-  You can contact me at ${response.email} or on GitHub at ${response.Github}.
+  You can contact me at ${response.email} or on GitHub at ${response.username}.
 `;
 }
 

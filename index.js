@@ -17,12 +17,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'project_name',
+        name: 'projectTitle',
         message: 'What is the title of your project?'
     },
     {
         type: 'input',
-        name: 'project_desc',
+        name: 'projectDesc',
         message: 'Write a description of your project'
     },
     {
