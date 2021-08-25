@@ -69,13 +69,10 @@ To get a local copy up and running follow these simple steps.
 
 ## Usage
 
+https://drive.google.com/file/d/1HK8PggH_VOYWnXTAmMrZgbuO1qxMU1f-/view
 
 
-
-
-
-
-
+![README Generator Demo](./walkthrough.gif)
 
 ## License
 
